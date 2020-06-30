@@ -8,20 +8,47 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "babel-plugin-macros": "^2.8.0",
     "core-js": "^3.6.5",
-    "vue": "^2.6.11"
+    "tailwindcss": "^1.4.6",
+    "vue": "^2.6.11",
+    "vue-unstated": "^0.0.7"
+  },
+  "babelMacros": {
+    "twin": {
+      "styled": {
+        "import": "styled",
+        "from": "@egoist/vue-emotion"
+      }
+    }
   },
   "devDependencies": {
+    "@egoist/vue-emotion": "^0.6.1",
+    "@emotion/core": "^10.0.28",
+    "@emotion/styled": "^10.0.27",
+    "@nuxt/babel-preset-app": "^2.13.2",
     "@typescript-eslint/eslint-plugin": "^2.33.0",
     "@typescript-eslint/parser": "^2.33.0",
     "@vue/cli-plugin-babel": "~4.4.0",
     "@vue/cli-plugin-eslint": "~4.4.0",
     "@vue/cli-plugin-typescript": "~4.4.0",
     "@vue/cli-service": "~4.4.0",
+    "@vue/composition-api": "*",
     "@vue/eslint-config-typescript": "^5.0.2",
+    "autoprefixer": "^9.8.4",
+    "babel-plugin-vue-jsx-modifier": "^1.1.2",
+    "babel-plugin-vue-tsx-functional": "^0.1.2",
+    "babel-preset-vca-jsx": "^0.3.5",
+    "emotion": "^10.0.27",
+    "emotion-theming": "^10.0.27",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
+    "tailwindcss-theming": "^3.0.0-beta.1",
+    "twin.macro": "^1.4.1",
     "typescript": "~3.9.3",
-    "vue-template-compiler": "^2.6.11"
+    "vue-emotion": "^0.4.29",
+    "vue-strict-prop": "^0.3.6",
+    "vue-template-compiler": "^2.6.11",
+    "vue-tsx-support": "^3.0.0-preview.1"
   }
 }
