@@ -14,11 +14,6 @@ const useTheme = (initialState = { theme: 'light' }) => {
   }
 
   const tw = computed(() => twConfig.theme)
-
-  // const currentTheme = computed(() => {
-  //     return theme
-  // })
-
   return { ...toRefs(state), switchTheme, tw }
 }
 

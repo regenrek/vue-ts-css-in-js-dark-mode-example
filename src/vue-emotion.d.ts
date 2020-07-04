@@ -5,7 +5,6 @@ declare module '@egoist/vue-emotion2' {
     import { Interpolation as EmotionInterpolation } from 'emotion';
 
     export * from 'emotion';
-  
 
     // export type VueEmotion = (vue: any) => any
 
