@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <Theme>
+    <nj-theme-provider>
       <NjButton>AAAAAAAAA</NjButton>
-    </Theme>
+    </nj-theme-provider>
   </div>
 </template>
 
@@ -10,13 +10,15 @@
 import Vue from 'vue';
 import NjButton from './components/NjButton';
 import Theme from './components/Theme.vue';
+import NjThemeProvider from './components/NjThemeProvider'
 import 'tailwindcss/dist/base.min.css'
 
 export default Vue.extend({
   name: 'App',
   components: {
     NjButton,
-    Theme
+    NjThemeProvider,
+    // Theme
   }
 });
 </script>

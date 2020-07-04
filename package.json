@@ -11,6 +11,7 @@
     "babel-plugin-macros": "^2.8.0",
     "core-js": "^3.6.5",
     "tailwindcss": "^1.4.6",
+    "tailwindcss-multi-theme": "^1.0.3",
     "vue": "^2.6.11",
     "vue-unstated": "^0.0.7"
   },
@@ -23,12 +24,13 @@
     }
   },
   "devDependencies": {
-    "@egoist/vue-emotion": "^0.6.1",
+    "@egoist/vue-emotion": "https://github.com/regenrek/vue-emotion#master",
     "@emotion/core": "^10.0.28",
     "@emotion/styled": "^10.0.27",
     "@nuxt/babel-preset-app": "^2.13.2",
     "@typescript-eslint/eslint-plugin": "^2.33.0",
     "@typescript-eslint/parser": "^2.33.0",
+    "@vue/babel-helper-vue-jsx-merge-props": "^1.0.0",
     "@vue/cli-plugin-babel": "~4.4.0",
     "@vue/cli-plugin-eslint": "~4.4.0",
     "@vue/cli-plugin-typescript": "~4.4.0",

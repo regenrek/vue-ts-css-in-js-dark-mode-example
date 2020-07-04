@@ -4,7 +4,7 @@ import { createContainer } from 'vue-unstated'
 import tailwindConfig from '../../tailwind.config'
 import resolveConfig from 'tailwindcss/resolveConfig'
 
-const { theme } = resolveConfig(tailwindConfig)
+const twConfig = resolveConfig(tailwindConfig)
 
 const useTheme = (initialState = { theme: 'light' }) => {
   const state = reactive(initialState)
@@ -13,11 +13,13 @@ const useTheme = (initialState = { theme: 'light' }) => {
     state.theme = state.theme === 'light' ? 'dark' : 'light'
   }
 
-  const currentTheme = computed(() => {
-      return theme
-  })
+  const tw = computed(() => twConfig.theme)
 
-  return { ...toRefs(state), switchTheme, currentTheme }
+  // const currentTheme = computed(() => {
+  //     return theme
+  // })
+
+  return { ...toRefs(state), switchTheme, tw }
 }
 
 export const themeContainer = createContainer(useTheme)

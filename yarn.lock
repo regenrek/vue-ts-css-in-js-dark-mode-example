@@ -827,10 +827,9 @@
   resolved "http://172.104.140.27:4873/@ctrl%2ftinycolor/-/tinycolor-2.6.1.tgz#0e78cc836a1fd997a9a22fa1c26c555411882160"
   integrity sha512-xKN3lAA+xbNhP+JX3sLhzA65IGiKqun/Yf9jBlZX7Og0SxlCrrqKxqTd6ccn20fv3Cgcvq6KnjPhnmS+v7uAwQ==
 
-"@egoist/vue-emotion@^0.6.1":
-  version "0.6.1"
-  resolved "http://172.104.140.27:4873/@egoist%2fvue-emotion/-/vue-emotion-0.6.1.tgz#6274f61da7307530008a057dcf9aef6cc4978420"
-  integrity sha512-ZcMjKp8T3j/FOnALZ9w6dK2VwcIsM6pk5gvZGANrkitI9Ya/bRGDMPO9MuMx7hGm1R6OK/10+6Wt/iTc/ogZ0w==
+"@egoist/vue-emotion@https://github.com/regenrek/vue-emotion#master":
+  version "0.5.0"
+  resolved "https://github.com/regenrek/vue-emotion#30d83c680500e99c39f2f83e1addb1447cf9c5ba"
   dependencies:
     "@emotion/cache" "^10.0.19"
     "@emotion/serialize" "^0.11.11"
@@ -8401,6 +8400,11 @@ table@^5.2.3:
     lodash "^4.17.14"
     slice-ansi "^2.1.0"
     string-width "^3.0.0"
+
+tailwindcss-multi-theme@^1.0.3:
+  version "1.0.3"
+  resolved "http://172.104.140.27:4873/tailwindcss-multi-theme/-/tailwindcss-multi-theme-1.0.3.tgz#06ee2a5f65777d8bdc5a5da6672ea7ee5615efe2"
+  integrity sha512-fHIhjZEBNIRxrf8PQIlGarsio2ryiNYIH5yEvFeCC1w7a17c+BkirsZ7YE3/PRcUkpIXTB7OEa3cdKtXeKxW5g==
 
 tailwindcss-theming@^3.0.0-beta.1:
   version "3.0.0-beta.1"

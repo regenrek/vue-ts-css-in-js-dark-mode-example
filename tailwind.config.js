@@ -1,5 +1,6 @@
 module.exports = {
     theme: {
+        themeVariants: ['dark'],
         extend: {
             colors: {
                 primary: '#9cdbff',
@@ -7,8 +8,9 @@ module.exports = {
             }
         }
     },
-    variants: {},
-    plugins: [
-    ],
-  }
-  
+    variants: {
+        backgroundColor: ['responsive', 'dark'],
+        textColor: ['responsive', 'dark'],
+    },
+    plugins: [require('tailwindcss-multi-theme')],
+}
