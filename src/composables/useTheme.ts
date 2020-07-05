@@ -1,5 +1,5 @@
 // import resolveConfig from 'tailwindcss/resolveConfig'
-import { reactive, toRefs, computed } from '@vue/composition-api'
+import { reactive, toRefs, computed, watch } from '@vue/composition-api'
 import { createContainer } from 'vue-unstated'
 import tailwindConfig from '../../tailwind.config'
 import resolveConfig from 'tailwindcss/resolveConfig'
@@ -21,6 +21,8 @@ const useTheme = (initialState = { themeVariant: 'light' }) => {
 
   const tw = twConfig.theme
   const themeVariants = computed(() => twConfig.theme.themeVariants)
+
+  watch(isDarkTheme, () => console.log(state.themeVariant))
 
   return { 
     ...toRefs(state),

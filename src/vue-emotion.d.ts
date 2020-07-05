@@ -1,5 +1,5 @@
 /* eslint-disable */
-declare module '@egoist/vue-emotion2' {
+declare module '@egoist/vue-emotion23' {
     import Vue from 'vue';
     import { TsxComponent } from 'vue-tsx-support';
     import { Interpolation as EmotionInterpolation } from 'emotion';

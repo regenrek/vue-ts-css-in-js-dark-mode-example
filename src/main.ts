@@ -4,10 +4,14 @@ import AppPage from './App'
 import VueCompositionApi, { createElement } from '@vue/composition-api';
 import { VueEmotion } from '@egoist/vue-emotion';
 import { themeContainer } from '@/composables/useTheme'
+import {InlineSvgPlugin} from 'vue-inline-svg';
+
+
 
 Vue.config.productionTip = false
 Vue.use(VueCompositionApi);
 Vue.use(VueEmotion)
+Vue.use(InlineSvgPlugin);
 
 const App = vca.component({
   name: "App",
