@@ -1,6 +1,6 @@
 module.exports = {
     theme: {
-        themeVariants: ['dark'],
+        themeVariants: ['dark', 'yolo'],
         extend: {
             colors: {
                 primary: '#9cdbff',

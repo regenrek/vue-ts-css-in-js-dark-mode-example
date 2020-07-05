@@ -20,6 +20,14 @@ This is a WIP proof of concept to make use of different libraries. I don't recom
 * [babel-preset-vca-jsx](https://github.com/luwanquan/babel-preset-vca-jsx) Automatically import `createElement as h` when writing `JSX`
 
 
+## How-To
+
+Basically all you can do with [twin.macro](https://github.com/ben-rogerson/twin.macro). Please see current [Limitations](#Limitations) 
+
+
+```
+
+
 ## Note
 
 * I've slightly adapted @egoist/vue-emotion: removed global theme injection so it works with vca local provide/inject.

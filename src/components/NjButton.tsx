@@ -1,14 +1,16 @@
 import * as vca from 'vue-tsx-support/lib/vca'
 import tw from '../../packages/twinmac/macro.js'
+import { css } from 'emotion'
 import { styled } from '@egoist/vue-emotion'
 import { themeContainer } from '../composables/useTheme'
 
-const NjButton = styled('button')([
-  tw`bg-yellow-500 border-yellow-200`
-])
+const baseStyle = tw`border-yellow-200 px-4 py-2`;
 
 export default vca.component({
   name: 'NjButton',
+  props: {
+    variant: String,
+  },
   setup (p, ctx) {
     /**
      * Inject tw theme config locally
@@ -17,9 +19,17 @@ export default vca.component({
 
     return () => {
       const theme = tw.value;
+      const variant="dark"
+
+      const classes = [
+        baseStyle,
+        variant === 'dark' && `
+          background-color: red
+        `
+      ]
 
       return (
-        <NjButton theme={theme}>{ctx.slots.default()}</NjButton>
+        <button class={css(classes)}>{ctx.slots.default()}</button>
       )
     }
   }

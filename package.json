@@ -10,6 +10,14 @@
     "build-mm": "microbundle -i packages/mymac/src/index.macro.js -f cjs -o packages/mymac/macro.js --target node",
     "kill-app": "kill -9 $(lsof -i:8080 -t) 2> /dev/null || exit 0"
   },
+  "babelMacros": {
+    "twin": {
+      "styled": {
+        "import": "styled",
+        "from": "@egoist/vue-emotion"
+      }
+    }
+  },
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^2.3.0",
     "babel-plugin-macros": "^2.8.0",
@@ -18,14 +26,6 @@
     "tailwindcss-multi-theme": "^1.0.3",
     "vue": "^2.6.11",
     "vue-unstated": "^0.0.7"
-  },
-  "babelMacros": {
-    "twin": {
-      "styled": {
-        "import": "styled",
-        "from": "@egoist/vue-emotion"
-      }
-    }
   },
   "devDependencies": {
     "@egoist/vue-emotion": "https://github.com/regenrek/vue-emotion#master",
@@ -51,8 +51,6 @@
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
     "microbundle": "^0.12.2",
-    "tailwindcss-dark-mode": "^1.1.4",
-    "tailwindcss-theming": "^3.0.0-beta.1",
     "twin.macro": "https://github.com/regenrek/twin.macro#master",
     "typescript": "~3.9.3",
     "vue-emotion": "^0.4.29",
