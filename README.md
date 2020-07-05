@@ -44,8 +44,60 @@ import { styled } from '@egoist/vue-emotion'
 ```
 </details>
 
+<details>
+<summary>
+<b>Use emotions `css` prop with twin.macro `tw` prop</b>
+</summary>
+
+❌
+```js
+const style = tw`flex items-center justify-center bg-black min-h-screen`
+
+// ↓ ↓ ↓ ↓ ↓ ↓
+
+{
+  fontSize: '0.875rem',
+  '@media (min-width: 768px)': {
+    fontSize: '1.125rem',
+  },
+}
+```
+
+✅     
+```js
+const style = css`${tw`flex items-center justify-center bg-black min-h-screen`}`
+```
+</details>
+
+<details>
+<summary>
+<b>Twin's `tw` prop on jsx elements</b>
+</summary>
+
+❌
+```js
+<div tw="flex bg-black">...</div>
+```
+
+✅     
+```js
+const style = css`${tw`flex bg-black`}`
+
+<div class={style}>...</div>
+```
+</details>
+
+
+
 
 ## Project setup
+
+Clone the project
+```
+git clone git@github.com:regenrek/vue-ts-twinmacro.git
+```
+
+Install and run
 ```
 yarn
 yarn serve

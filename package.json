@@ -5,9 +5,13 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "build-twin": "rm -f packages/twinmac/macro.js && rm -f packages/twinmac/macro.js.map && microbundle -i packages/twinmac/src/macro.js -f cjs -o packages/twinmac/macro.js --target node && npm run kill-app && npm run build",
+    "build-mm": "microbundle -i packages/mymac/src/index.macro.js -f cjs -o packages/mymac/macro.js --target node",
+    "kill-app": "kill -9 $(lsof -i:8080 -t) 2> /dev/null || exit 0"
   },
   "dependencies": {
+    "@fullhuman/postcss-purgecss": "^2.3.0",
     "babel-plugin-macros": "^2.8.0",
     "core-js": "^3.6.5",
     "tailwindcss": "^1.4.6",
@@ -28,6 +32,7 @@
     "@emotion/core": "^10.0.28",
     "@emotion/styled": "^10.0.27",
     "@nuxt/babel-preset-app": "^2.13.2",
+    "@types/babel-plugin-macros": "^2.8.2",
     "@typescript-eslint/eslint-plugin": "^2.33.0",
     "@typescript-eslint/parser": "^2.33.0",
     "@vue/babel-helper-vue-jsx-merge-props": "^1.0.0",
@@ -45,8 +50,10 @@
     "emotion-theming": "^10.0.27",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
+    "microbundle": "^0.12.2",
+    "tailwindcss-dark-mode": "^1.1.4",
     "tailwindcss-theming": "^3.0.0-beta.1",
-    "twin.macro": "^1.4.1",
+    "twin.macro": "https://github.com/regenrek/twin.macro#master",
     "typescript": "~3.9.3",
     "vue-emotion": "^0.4.29",
     "vue-strict-prop": "^0.3.6",

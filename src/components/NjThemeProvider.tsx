@@ -1,4 +1,3 @@
-import "vue-tsx-support/enable-check"
 import * as vca from 'vue-tsx-support/lib/vca'
 import { themeContainer } from '../composables/useTheme'
 import { computed } from '@vue/composition-api'
