@@ -5,8 +5,7 @@ import VueCompositionApi, { createElement } from '@vue/composition-api';
 import { VueEmotion } from '@egoist/vue-emotion';
 import { themeContainer } from '@/composables/useTheme'
 import {InlineSvgPlugin} from 'vue-inline-svg';
-
-
+import WebFont from 'webfontloader';
 
 Vue.config.productionTip = false
 Vue.use(VueCompositionApi);
@@ -29,6 +28,8 @@ const App = vca.component({
     }
   }
 });
+
+WebFont.load({ google: { families: ["VT323"] } });
 
 new Vue({
   render: h => h(App),

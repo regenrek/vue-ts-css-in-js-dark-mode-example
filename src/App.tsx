@@ -7,9 +7,11 @@ import 'tailwindcss/dist/base.min.css'
 import { css } from 'emotion';
 
 const styles = {
-  app: css`${tw`flex items-center justify-center min-h-screen`}`,
+  app: css`${tw`font-body flex items-center justify-center min-h-screen`}`,
   list: css`${tw`flex`}`,
-  listItem: css`${tw`mx-2`}`
+  listItem: css`${tw`flex mx-2`}`,
+  svg:  css`${tw`mt-2`}`,
+  buttonLabel: css`${tw`mt-2 block`}`
 }
 
 export default vca.component({
@@ -29,7 +31,8 @@ export default vca.component({
                 {themeVariants.value.map(theme => (
                   <li staticClass={styles.listItem}>
                     <NjButton action={() => switchThemeVariant(theme)} variant={theme}>
-                      <inline-svg src={require('./assets/moon.svg')}/>
+                      <inline-svg class={styles.svg} width="40" height="40" src={require(`./assets/${theme === 'dark' ? 'moon' : 'sun' }.svg`)}/>
+                      <span class={styles.buttonLabel}>{theme}</span>
                       </NjButton>
                 </li>
                 ))}

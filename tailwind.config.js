@@ -1,5 +1,8 @@
 module.exports = {
     theme: {
+        fontFamily: {
+            body: ['VT323', 'sans-serif']
+        },
         linearGradientColors: { 
             'dark-gradient': ['#141E30','#243B55'],
             'light-gradient': ['#E0EAFC', '#CFDEF3'],
