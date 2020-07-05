@@ -1614,11 +1614,6 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@ctrl/tinycolor@^2.5.3":
-  version "2.6.1"
-  resolved "http://172.104.140.27:4873/@ctrl%2ftinycolor/-/tinycolor-2.6.1.tgz#0e78cc836a1fd997a9a22fa1c26c555411882160"
-  integrity sha512-xKN3lAA+xbNhP+JX3sLhzA65IGiKqun/Yf9jBlZX7Og0SxlCrrqKxqTd6ccn20fv3Cgcvq6KnjPhnmS+v7uAwQ==
-
 "@egoist/vue-emotion@https://github.com/regenrek/vue-emotion#master":
   version "0.5.0"
   resolved "https://github.com/regenrek/vue-emotion#30d83c680500e99c39f2f83e1addb1447cf9c5ba"
@@ -9740,27 +9735,12 @@ table@^5.2.3:
     slice-ansi "^2.1.0"
     string-width "^3.0.0"
 
-tailwindcss-dark-mode@^1.1.4:
-  version "1.1.4"
-  resolved "http://172.104.140.27:4873/tailwindcss-dark-mode/-/tailwindcss-dark-mode-1.1.4.tgz#730f03022dc132c56d5716170520520bf4b1b2cc"
-  integrity sha512-e0zgg6V5wc+pUHLdjc7oxnbetcPv0hqvUPMfK3tvugwyEZtG8n8FhDu3kkPbu7KwAqB7NQ8aONITv+jB2TVpRA==
-  dependencies:
-    tailwindcss "^1.2.0"
-
 tailwindcss-multi-theme@^1.0.3:
   version "1.0.3"
   resolved "http://172.104.140.27:4873/tailwindcss-multi-theme/-/tailwindcss-multi-theme-1.0.3.tgz#06ee2a5f65777d8bdc5a5da6672ea7ee5615efe2"
   integrity sha512-fHIhjZEBNIRxrf8PQIlGarsio2ryiNYIH5yEvFeCC1w7a17c+BkirsZ7YE3/PRcUkpIXTB7OEa3cdKtXeKxW5g==
 
-tailwindcss-theming@^3.0.0-beta.1:
-  version "3.0.0-beta.1"
-  resolved "http://172.104.140.27:4873/tailwindcss-theming/-/tailwindcss-theming-3.0.0-beta.1.tgz#4d3fb0b2bb27e1ffe1129c5df9379aed81a6db37"
-  integrity sha512-CVYveuKeM/lQVcfb6tDLCBy84c95zD31VSAaQwZlloViIh8DG2tVAqwyYuhdZXRLahbb68+QN/aJ5e8cnrz/Aw==
-  dependencies:
-    "@ctrl/tinycolor" "^2.5.3"
-    lodash "^4.17.15"
-
-tailwindcss@^1.2.0, tailwindcss@^1.4.4, tailwindcss@^1.4.6:
+tailwindcss@^1.4.4, tailwindcss@^1.4.6:
   version "1.4.6"
   resolved "http://172.104.140.27:4873/tailwindcss/-/tailwindcss-1.4.6.tgz#17b37166ccda08d7e7f9ca995ea48ce1e0089700"
   integrity sha512-qV0qInUq1FWih39Bc5CWECdgObSzRrbjGD4ke4kAPSIq6WXrPhv0wwOcUWJgJ66ltT9j+XnSRYikG8WNRU/fTQ==
@@ -10056,9 +10036,10 @@ tweetnacl@^0.14.3, tweetnacl@~0.14.0:
   resolved "http://172.104.140.27:4873/tweetnacl/-/tweetnacl-0.14.5.tgz#5ae68177f192d4456269d108afa93ff8743f4f64"
   integrity sha1-WuaBd/GS1EViadEIr6k/+HQ/T2Q=
 
-"twin.macro@https://github.com/regenrek/twin.macro#master":
-  version "1.4.1"
-  resolved "https://github.com/regenrek/twin.macro#286cb74eafe5a80a64d37250c608f5bd57ffd0ff"
+twin.macro@^1.5.0:
+  version "1.5.0"
+  resolved "http://172.104.140.27:4873/twin.macro/-/twin.macro-1.5.0.tgz#8ef869ee32e2e73b0f9954d412b1d7fe80519d70"
+  integrity sha512-LDdNwobwizgOXVwxLObALq1j+u9USFrGXpKPQy7UCum+y/8UQBxCnI+JV7NCRq4a/+3o3ot8TY0hmkIriuZP+w==
   dependencies:
     "@babel/parser" "^7.10.2"
     babel-plugin-macros "^2.8.0"

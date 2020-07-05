@@ -1,14 +1,13 @@
-import tw from '../packages/twinmac/macro.js'
+import tw from 'twin.macro'
 import * as vca from "vue-tsx-support/lib/vca";
 import NjButton from './components/NjButton';
 import NjThemeProvider from './components/NjThemeProvider'
+import { themeContainer } from './composables/useTheme'
 import 'tailwindcss/dist/base.min.css'
 import { css } from 'emotion'
 
-
-
 const styles = {
-  app: css`${tw`flex items-center justify-center bg-black min-h-screen`}`,
+  app: css`${tw`flex items-center justify-center min-h-screen`}`,
   list: css`${tw`flex`}`,
   listItem: css`${tw`mx-2`}`
 }
@@ -21,17 +20,15 @@ export default vca.component({
   },
   setup() {
     return () => {
-      const themes = ['light', 'dark', 'yolo']
-
-      console.log(styles.app)
+      const {themeVariants, switchThemeVariant} = themeContainer.useContainer()
 
       return (
         <NjThemeProvider>
           <div id="app" staticClass={styles.app}>
               <ul staticClass={styles.list}>
-                {themes.map(theme => (
+                {themeVariants.value.map(theme => (
                   <li staticClass={styles.listItem}>
-                    <NjButton variant={theme}>{theme}</NjButton>
+                    <NjButton action={() => switchThemeVariant(theme)} variant={theme}>{theme}</NjButton>
                 </li>
                 ))}
               </ul>

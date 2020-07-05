@@ -51,7 +51,7 @@
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
     "microbundle": "^0.12.2",
-    "twin.macro": "https://github.com/regenrek/twin.macro#master",
+    "twin.macro": "^1.5.0",
     "typescript": "~3.9.3",
     "vue-emotion": "^0.4.29",
     "vue-strict-prop": "^0.3.6",

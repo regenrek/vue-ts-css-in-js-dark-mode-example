@@ -6,15 +6,30 @@ import resolveConfig from 'tailwindcss/resolveConfig'
 
 const twConfig = resolveConfig(tailwindConfig)
 
-const useTheme = (initialState = { theme: 'light' }) => {
+const useTheme = (initialState = { themeVariant: 'light' }) => {
   const state = reactive(initialState)
 
-  const switchTheme = () => {
-    state.theme = state.theme === 'light' ? 'dark' : 'light'
+  const switchThemeVariant = (variant) => {
+    state.themeVariant = variant
   }
 
-  const tw = computed(() => twConfig.theme)
-  return { ...toRefs(state), switchTheme, tw }
+  const toggleDarkLightMode = () => {
+    state.themeVariant = state.themeVariant === 'light' ? 'dark' : 'light'
+  }
+
+  const isDarkTheme = computed(() => state.themeVariant === 'dark')
+
+  const tw = twConfig.theme
+  const themeVariants = computed(() => twConfig.theme.themeVariants)
+
+  return { 
+    ...toRefs(state),
+    switchThemeVariant,
+    toggleDarkLightMode, 
+    tw,
+    themeVariants,
+    isDarkTheme
+  }
 }
 
 export const themeContainer = createContainer(useTheme)
