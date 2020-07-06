@@ -15,6 +15,7 @@ Dark Mode Switcher included. Using composables as Theme Wrapper with provide/inj
 <img src="https://i.imgur.com/cmDHVAh.gif" style="width: 380px;display:block;max-width:100%" />
 
 <br>
+[vuejs/composition-api](https://github.com/vuejs/composition-api)
 [Demo Link](https://vuejs-ts-emotion-css-in-js.netlify.app)
 
 This is a WIP proof of concept to make use of different libraries. I don't recommend to use this anywhere in production.
