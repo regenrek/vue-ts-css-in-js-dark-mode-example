@@ -12,7 +12,7 @@
 
 Dark Mode Switcher included. Using composables as Theme Wrapper with provide/inject.
 
-![Dark mode](https://i.imgur.com/cmDHVAh.gif)
+!<img src="https://i.imgur.com/cmDHVAh.gif" style="width: 250px;display:blockmax-width:100%">
 [Live Link](https://vuejs-ts-emotion-css-in-js.netlify.app/)
 
 
