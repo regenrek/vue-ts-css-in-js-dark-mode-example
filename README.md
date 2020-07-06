@@ -8,6 +8,13 @@
 </p>
 
 
+## Demo
+
+Dark Mode Switcher included. Using composables as Theme Wrapper with provide/inject.
+
+[Dark mode](https://imgur.com/cmDHVAh)
+
+
 This is a WIP proof of concept to make use of different libraries. I don't recommend to use this anywhere in production.
 
 ## Using
@@ -18,7 +25,7 @@ This is a WIP proof of concept to make use of different libraries. I don't recom
 * [@egoist/vue-emotion](https://github.com/regenrek/vue-emotion) emotion css-in-js
 * [babel jsx](https://github.com/vuejs/jsx) vue.js jsx support
 * [babel-preset-vca-jsx](https://github.com/luwanquan/babel-preset-vca-jsx) Automatically import `createElement as h` when writing `JSX`
-
+* [vue-unstated](https://github.com/resessh/vue-unstated) Automatically import `createElement as h` when writing `JSX`
 
 ## How-To
 
