@@ -1,7 +1,7 @@
 # Vue + twin.macro
 
 <p align="center">
-  <img src="https://i.imgur.com/XQ5kwkc.jpg" alt="emotion" style="width:95%;display:block;max-width:100%"><br>
+  <img src="https://i.imgur.com/XQ5kwkc.jpg" alt="emotion" style="width:95%;display:block;max-width:100%" /><br>
   <br>
   Vue + Twin CSS-in-js lib (TailwindCSS)
     <br>
@@ -12,11 +12,10 @@
 
 Dark Mode Switcher included. Using composables as Theme Wrapper with provide/inject.
 
-<img src="https://i.imgur.com/cmDHVAh.gif" style="width: 380px;display:block;max-width:100%">
+<img src="https://i.imgur.com/cmDHVAh.gif" style="width: 380px;display:block;max-width:100%" />
 
 <br>
-[Live Link](https://vuejs-ts-emotion-css-in-js.netlify.app/)
-
+[Demo Link](https://vuejs-ts-emotion-css-in-js.netlify.app)
 
 This is a WIP proof of concept to make use of different libraries. I don't recommend to use this anywhere in production.
 
