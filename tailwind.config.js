@@ -1,7 +1,6 @@
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const path = require('path')
 // eslint-disable-next-line @typescript-eslint/no-var-requires
-const tailwindcss = require('./packages/tailwindcss-theming/dist/index.js')
 
 console.log("PAAAATH", path.dirname(__filename))
 
@@ -19,6 +18,6 @@ module.exports = {
     plugins: [
       require('tailwindcss-gradients'),
       // eslint-disable-next-line @typescript-eslint/no-var-requires
-      tailwindcss
+      require('tailwindcss-theming')
     ],
 }

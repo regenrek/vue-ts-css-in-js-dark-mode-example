@@ -2,7 +2,7 @@
 const defu = require('defu')
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
-const { ThemeManager, Theme } = require('./packages/tailwindcss-theming/dist/api.js');
+const { ThemeManager, Theme } = require('tailwindcss-theming/api');
 
 
 const palette = {
