@@ -19,7 +19,7 @@ const useTheme = (initialState = { themeVariant: 'light' }) => {
 
   const isDarkTheme = computed(() => state.themeVariant === 'dark')
 
-  const tw = twConfig.theme
+  const tw: object = twConfig.theme
   const themeVariants = computed(() => twConfig.theme.themeVariants)
 
   watch(isDarkTheme, () => console.log(state.themeVariant))

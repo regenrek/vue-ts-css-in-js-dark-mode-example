@@ -6,5 +6,10 @@ module.exports = {
         config.module.rule('ts').uses.delete('cache-loader');
         config.module.rule('tsx').uses.delete('cache-loader');
       }
+      // config.externals({
+      //   ...config.get('externals'),
+      //   "fs": "require('fs')",
+      //   "path": "require('path')"
+      // })
     }
   }
