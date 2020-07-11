@@ -13,8 +13,8 @@ const getTextColor = (background: string, tw: any) => {
 
 const styles = {
   base: tw`border bg-sun px-4 py-2 outline-none focus:outline-none`,
-  dark: tw`border-white text-white`,
-  light: tw`border-black text-black`
+  dark: tw`border-white bg-sun text-white`,
+  light: tw`border-black bg-sun text-black`
 }
 
 const defaultThemeVariants = (variant?: string, isDark?: boolean, tw?: any): string => {
